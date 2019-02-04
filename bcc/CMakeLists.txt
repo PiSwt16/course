@@ -8,6 +8,7 @@ project (bcc)
 add_executable(bound bound.cpp)
 add_executable(reverse reverse.cpp)
 add_executable(stringstream stringstream.cpp)
+add_executable(check check.cpp)
 
 # setenv.bat
 # cmake .. -G"Borland Makefiles"
