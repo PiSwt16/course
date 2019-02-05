@@ -13,29 +13,22 @@ void print(const int& n) {
  
 
 int main() {
-    int a(10), b(20);
-    cout << a - b << endl;
-    cout << abs(a - b) << endl;
-    
-    int N(5);
-    vector<int> v;
-    v.resize(N);
-    for(int i = 0; i < N; i++) {
-        v[i] = i * 11;
-    }
-    for(int i = 0; i < N; i++) {
-        cout << v[i] << ' ';
-    }
-    // for (const auto& aa : v) {  
-    //     cout << aa << endl;
-    // }
-    
-    cout << endl;
+  
+    int myints[] = {10,20,30,30,20,10,10,20};
+    vector<int> v(myints,myints+8);           // 10 20 30 30 20 10 10 20
+    sort(v.begin(), v.end());                // 10 10 10 20 20 20 30 30
+
+    // vector<int>::iterator low,up;
+    // low = std::lower_bound (v.begin(), v.end(), 20);
+    // up = std::upper_bound (v.begin(), v.end(), 20);
+
+    // cout << "lower_bound at position " << (low - v.begin()) << '\n';
+    // cout << "upper_bound at position " << (up - v.begin()) << '\n';
+
     
     std::for_each(v.begin(), v.end(), print);
     cout << endl;
-    // std::for_each(v.begin(), v.end(), [](int &n){ n++; });
-    // cout << endl;
+
     std::reverse(v.begin(),v.end()); 
     std::for_each(v.begin(), v.end(), print);
     cout << endl;
