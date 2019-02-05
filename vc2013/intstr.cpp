@@ -36,34 +36,34 @@ int main() {
     printf("out_string = %s\n", out_string);
 
 // C++ string to int
-    // // 1st
-    // std::string text = "200";
-    // int number2;
-    // std::istringstream iss (text);
-    // iss >> number2;
-    // if (!iss.good ()) {
-    //     cout << "something happened";
-    // } else {
-    //     cout << number2 << endl;
-    // }
+    // 1st
+    std::string text = "200";
+    int number2;
+    std::istringstream iss (text);
+    iss >> number2;
+    if (!iss.good ()) {
+        cout << "something happened";
+    } else {
+        cout << number2 << endl;
+    }
 
-    // // 2nd
-    // std::string str2("201");
-    // int n = std::stoi(str2);
-    // std::cout << str2 << " --> " << n << std::endl;
+    // 2nd
+    std::string str2("201");
+    int n = std::stoi(str2);
+    std::cout << str2 << " --> " << n << std::endl;
 
 // C++ int to string
-    // //1st
-    // int i = 300;
-    // std::string out_string2;
-    // std::stringstream ss;
-    // ss << i;
-    // out_string2 = ss.str();
-    // cout << out_string2 << endl;
-    // //2nd
-    // int n2 = 302;
-    // std::string str = std::to_string(n2);
-    // std::cout << n2 << " ==> " << str << std::endl;
+    //1st
+    int i = 300;
+    std::string out_string2;
+    std::stringstream ss;
+    ss << i;
+    out_string2 = ss.str();
+    cout << out_string2 << endl;
+    //2nd
+    int n2 = 302;
+    std::string str = std::to_string(n2);
+    std::cout << n2 << " ==> " << str << std::endl;
 
     return 0;
 }
