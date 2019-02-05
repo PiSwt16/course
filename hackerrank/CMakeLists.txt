@@ -41,6 +41,7 @@ add_executable(array2d array2d.cpp)
 add_executable(array_foreach array_foreach.cpp)
 add_executable(array_vector array_vector.cpp)
 add_executable(array_lower_bound array_lower_bound.cpp)
+add_executable(array_reverse array_reverse.cpp)
 
 add_executable(binary_count binary_count.cpp)
 
